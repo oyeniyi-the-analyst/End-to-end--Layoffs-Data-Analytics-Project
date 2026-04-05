@@ -31,26 +31,6 @@ The **Layoffs Data Analytics Project** transforms raw global layoffs data from t
   - Exports clean CSV and computes KPIs automatically  
 
 
-
-## Repository Structure
-layoffs-data-analytics/
-│
-├─ README.md # Project overview
-├─ data/
-│ ├─ raw/ # Original CSV datasets
-│ └─ cleaned/ # Exported clean dataset
-├─ sql/
-│ ├─ 01_create_db.sql # Database & raw table creation
-│ ├─ 02_staging_dedup.sql # Cleaning, deduplication, standardization
-│ ├─ 03_export.sql # Export clean dataset
-│ ├─ 04_kpis.sql # Advanced KPIs
-│ └─ full_pipeline.sql # Combined full pipeline
-├─ automation/
-│ └─ run_pipeline.bat # Full MySQL automation for Windows
-├─ reports/
-│ └─ powerbi_dashboard.pbix # Power BI dashboard
-
-
 ## Installation & Setup
 
 mysql -u <username> -p < sql/01_create_db.sql
